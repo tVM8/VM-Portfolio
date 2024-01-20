@@ -1,0 +1,195 @@
+#intro{
+    height: calc(100vh - 4rem);
+    width: 100vw;
+    max-width: 75rem;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+
+/* .container{
+    width: 100%;
+    height: 100vh;
+    background: #3c5077;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.popup{
+    width: 400px;
+    background: #fff;
+    border-radius: 6px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% -50%) scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #333;
+   visibility: hidden;
+}
+
+.popup img{
+       width: 100px;
+       margin-top: -50px;
+       border-radius: 50%;
+       box-shadow: 0 2px 5px rgba(0,0,0,0,2);
+
+}
+
+.popup h2{
+    font-size: 38px;
+    font-weight: 500;
+    margin: 30px 0 10px;
+}
+
+.popup button{
+    width: 100%;
+    margin-top: 50px;
+    padding: 10px 0;
+    background: #6fd649;
+    color: #fff;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 5px 5px rgba(0,0,0,0,2);
+} */
+.bg{
+     position: absolute;
+     top: -4rem;
+     right: 0;
+     z-index: -1;
+     object-fit: cover;
+     height:100vh;
+     opacity: 0;
+     /* transform: translateY(30px); */
+     animation: moveup 1s linear forwards;
+     animation-delay: 1s;
+     transition: 0.3s;
+    
+}
+
+.bg:hover{
+    transform: scale(1.1,1.1);
+}
+
+@keyframes moveup{
+    100%{
+        opacity: 1;
+        transform: translateY(30px);
+    }
+}
+
+.introContent{
+    height: 100vh;
+    width: 100vw;
+    padding:2rem;
+    font-size: 3rem;
+    font-weight: 700;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hello{
+    font-size: 1.75rem;
+    font-weight: 100;
+}
+
+.introName{
+    color: #0ef;
+}
+
+.introPara{
+    font-size: medium;
+    font-weight: 10;
+    letter-spacing: 1px;
+    color: #0ef;
+}
+
+.btn{
+    background-color: whitesmoke;
+    margin: 0.5rem 0;
+    padding: 0.5rem 1.5rem;
+    font-size: 40%;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+    width: 12rem;
+}
+
+.btn:hover{
+    font-size: 45%;
+    box-shadow: 0 0 30px whitesmoke;
+    box-sizing: border-box;
+}
+
+.fsd{
+    color: transparent;
+    -webkit-text-stroke: 1px whitesmoke;
+    background-image: url(/src/Content/back.png);
+    -webkit-background-clip: text;
+    background-position: 0 0 ;
+    animation: back 20s linear infinite;
+
+}
+
+@keyframes back{
+    100% {
+        background-position: 2000px 0;
+    }
+}
+
+.btn2{ 
+    background-color: #0ef;
+    color: black;
+    margin: 0.5rem 0;
+    padding: 0.5rem 1.5rem;
+    font-size: 30%;
+    font-weight: 700;
+    height: 2.6rem;
+    border: none;
+    cursor: pointer;
+    width: 12rem;
+}
+
+.btn3{ 
+    background-color: #0ef;
+    color: black;
+    margin: -2rem -1.5rem;
+    /* padding: 1rem; */
+    /* font-size: 30%; */
+    font-weight: 700;
+    height: 2.6rem;
+    border: none;
+    cursor: pointer;
+    width: 12rem;
+}
+
+.btn3:hover{
+    font-size: 100%;
+}
+
+.btn2:hover{
+    box-shadow: 0 0 30px #0ef;
+    box-sizing: border-box;
+    font-size: 33%;
+}
+ @media screen and (max-width:480px) {
+    .bg{
+        right: -15rem;
+    }
+    .introContent{
+        font-size: 10vw;
+    }
+    .hello{
+        font-size: 4.5vw;
+    }
+    .introPara{
+        font-size: small;
+    }
+    
+} 

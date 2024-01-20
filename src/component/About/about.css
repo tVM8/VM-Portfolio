@@ -1,0 +1,74 @@
+#about{
+    overflow: hidden;
+    width: 120vw;
+    max-width: 65rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.aboutTitle{
+    font-size: 3rem;
+    font-weight: 600;
+    margin-top: 4rem;
+    color: #0ef;
+}
+
+.aboutDesc{
+    font-weight: 400;
+   text-align: justify;
+   font-size: 1rem;
+   max-width: 51rem;
+   padding : 0 1rem; 
+   color: wheat;
+   /* border: 1px solid #0ef; */
+}
+
+
+
+.aboutDesc:hover{
+    /* box-shadow: 0 0 25px #0ef; */
+}
+.desc{
+    font-weight: 500;
+    color: rgb(142, 234, 241);
+}
+
+.aboutBar{
+    margin: 2rem;
+    width: 150vw;
+    max-width: 80%;
+    text-align: left;
+    margin-bottom: 3rem;
+}
+
+.aboutBarText{
+    font-size: 0.9rem;
+    font-weight: 200;
+    /* border: 1.5px solid #0ef; */
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    background: rgb(50,50,50);
+    box-shadow: 0 0 15px #0ef;
+}
+
+
+/* @media  screen and (max-width : 720px) {
+    .skillBarText>p{
+        font-size: 2vw;
+    }
+    
+}
+
+@media  screen and (max-width : 480px) {
+    .skillBarText>p{
+        font-size: 3vw;
+    }
+    .skillBarText>h2{
+        font-size: 5vw;
+    } 
+    
+ } */
